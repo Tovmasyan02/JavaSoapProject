@@ -14,7 +14,7 @@
 	  </xs:complexType>
 	  <xs:complexType name="company">
 		<xs:sequence>
-		  <xs:element name="Employee" type="tns:employee"/>
+		  <xs:element maxOccurs="unbounded" minOccurs="0" name="Employee" type="tns:employee"/>
 		</xs:sequence>
 	  </xs:complexType>
 	  </xs:schema>
