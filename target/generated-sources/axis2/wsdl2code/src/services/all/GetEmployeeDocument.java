@@ -17,7 +17,7 @@ package services.all;
 public interface GetEmployeeDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployeeb5a7doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployeeb5a7doctype");
     
     /**
      * Gets the "getEmployee" element
@@ -42,7 +42,7 @@ public interface GetEmployeeDocument extends org.apache.xmlbeans.XmlObject
     public interface GetEmployee extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployee.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployee9f17elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployee.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployee9f17elemtype");
         
         /**
          * Gets the "employeeId" element

@@ -16,22 +16,47 @@ package services.all;
 public interface Company extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Company.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("company5d5etype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Company.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("company5d5etype");
     
     /**
-     * Gets the "Employee" element
+     * Gets array of all "Employee" elements
      */
-    services.all.Employee getEmployee();
+    services.all.Employee[] getEmployeeArray();
     
     /**
-     * Sets the "Employee" element
+     * Gets ith "Employee" element
      */
-    void setEmployee(services.all.Employee employee);
+    services.all.Employee getEmployeeArray(int i);
     
     /**
-     * Appends and returns a new empty "Employee" element
+     * Returns number of "Employee" element
+     */
+    int sizeOfEmployeeArray();
+    
+    /**
+     * Sets array of all "Employee" element
+     */
+    void setEmployeeArray(services.all.Employee[] employeeArray);
+    
+    /**
+     * Sets ith "Employee" element
+     */
+    void setEmployeeArray(int i, services.all.Employee employee);
+    
+    /**
+     * Inserts and returns a new empty value (as xml) as the ith "Employee" element
+     */
+    services.all.Employee insertNewEmployee(int i);
+    
+    /**
+     * Appends and returns a new empty value (as xml) as the last "Employee" element
      */
     services.all.Employee addNewEmployee();
+    
+    /**
+     * Removes the ith "Employee" element
+     */
+    void removeEmployee(int i);
     
     /**
      * A factory class with static methods for creating instances

@@ -17,7 +17,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface IDREFDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IDREFDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("idref033cdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IDREFDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("idref033cdoctype");
     
     /**
      * Gets the "IDREF" element

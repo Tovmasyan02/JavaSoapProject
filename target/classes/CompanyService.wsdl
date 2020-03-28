@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions name="CompanyService" targetNamespace="http://all.Services/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://all.Services/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
-    <xs:schema targetNamespace="http://all.Services/" version="1.0" xmlns:ns16="http://all.Services/" xmlns:ns17="http://all.Services/" xmlns:ns92="http://all.Services/" xmlns:tns="http://all.Services/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:schema targetNamespace="http://all.Services/" version="1.0" xmlns:ns74="http://all.Services/" xmlns:ns75="http://all.Services/" xmlns:ns92="http://all.Services/" xmlns:tns="http://all.Services/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	  <xs:element name="employee" type="tns:employee"/>
 	  <xs:element name="list" type="tns:company"/>
 	  
@@ -14,10 +14,10 @@
 	  </xs:complexType>
 	  <xs:complexType name="company">
 		<xs:sequence>
-		  <xs:element name="Employee" type="tns:employee"/>
+		  <xs:element maxOccurs="unbounded" minOccurs="0" name="Employee" type="tns:employee"/>
 		</xs:sequence>
 	  </xs:complexType>
-	  <xsd:element name="getEmployeesByExperience"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="experience" nillable="true" type="xsd:double"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployee"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="employeeId" nillable="true" type="xsd:int"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeesByExperienceResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns16:company"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeeResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns17:employee"/></xsd:sequence></xsd:complexType></xsd:element></xs:schema>
+	  <xsd:element name="getEmployeesByExperience"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="experience" nillable="true" type="xsd:double"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployee"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="employeeId" nillable="true" type="xsd:int"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeesByExperienceResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns74:company"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeeResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns75:employee"/></xsd:sequence></xsd:complexType></xsd:element></xs:schema>
   </wsdl:types>
   <wsdl:message name="getEmployeeRequest">
     <wsdl:part name="employeeId" type="xsd:int">

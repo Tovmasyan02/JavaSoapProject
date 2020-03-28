@@ -17,7 +17,7 @@ package services.all;
 public interface GetEmployeeResponseDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployeeresponse4ee6doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployeeresponse4ee6doctype");
     
     /**
      * Gets the "getEmployeeResponse" element
@@ -42,7 +42,7 @@ public interface GetEmployeeResponseDocument extends org.apache.xmlbeans.XmlObje
     public interface GetEmployeeResponse extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployeeresponse0955elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeeResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployeeresponse0955elemtype");
         
         /**
          * Gets the "return" element

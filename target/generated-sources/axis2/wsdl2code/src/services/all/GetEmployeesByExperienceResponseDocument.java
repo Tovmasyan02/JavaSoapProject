@@ -17,7 +17,7 @@ package services.all;
 public interface GetEmployeesByExperienceResponseDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeesByExperienceResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployeesbyexperienceresponse38a8doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeesByExperienceResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployeesbyexperienceresponse38a8doctype");
     
     /**
      * Gets the "getEmployeesByExperienceResponse" element
@@ -42,7 +42,7 @@ public interface GetEmployeesByExperienceResponseDocument extends org.apache.xml
     public interface GetEmployeesByExperienceResponse extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeesByExperienceResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("getemployeesbyexperienceresponseb635elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GetEmployeesByExperienceResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("getemployeesbyexperienceresponseb635elemtype");
         
         /**
          * Gets the "return" element

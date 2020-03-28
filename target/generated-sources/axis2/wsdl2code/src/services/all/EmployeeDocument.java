@@ -17,7 +17,7 @@ package services.all;
 public interface EmployeeDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(EmployeeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("employeeff0bdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(EmployeeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("employeeff0bdoctype");
     
     /**
      * Gets the "employee" element

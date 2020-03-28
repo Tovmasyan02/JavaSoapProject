@@ -16,7 +16,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface UnsignedShort extends org.apache.xmlbeans.XmlUnsignedShort
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(UnsignedShort.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s3B0750D825A0B11868E259605CBDBE11").resolveHandle("unsignedshortde9btype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(UnsignedShort.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s96F4B5C626DEC24A81840275802AF6CE").resolveHandle("unsignedshortde9btype");
     
     /**
      * Gets the "id" attribute
