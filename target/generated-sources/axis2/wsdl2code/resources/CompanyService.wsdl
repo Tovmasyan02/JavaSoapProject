@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CompanyService" targetNamespace="http://all.Services/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://all.Services/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://all.Services/" version="1.0" xmlns:ns16="http://all.Services/" xmlns:ns17="http://all.Services/" xmlns:ns92="http://all.Services/" xmlns:tns="http://all.Services/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	  <xs:element name="employee" type="tns:employee"/>
+	  <xs:element name="list" type="tns:company"/>
+	  
+	  <xs:complexType name="employee">
+		<xs:sequence>
+		  <xs:element name="employeeId" type="xs:int"/>
+		  <xs:element name="experience" type="xs:double"/>
+		  <xs:element name="name" type="xs:string"/>
+		</xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="company">
+		<xs:sequence>
+		  <xs:element name="Employee" type="tns:employee"/>
+		</xs:sequence>
+	  </xs:complexType>
+	  <xsd:element name="getEmployeesByExperience"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="experience" nillable="true" type="xsd:double"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployee"><xsd:complexType><xsd:sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element form="unqualified" name="employeeId" nillable="true" type="xsd:int"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeesByExperienceResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns16:company"/></xsd:sequence></xsd:complexType></xsd:element><xsd:element name="getEmployeeResponse"><xsd:complexType><xsd:sequence><xsd:element form="unqualified" name="return" nillable="true" type="ns17:employee"/></xsd:sequence></xsd:complexType></xsd:element></xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getEmployeeRequest">
+    <wsdl:part name="employeeId" type="xsd:int">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeeResponse">
+    <wsdl:part name="return" type="tns:employee">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeesByExperienceResponse">
+    <wsdl:part name="return" type="tns:company">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeesByExperienceRequest">
+    <wsdl:part name="experience" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EmployeeService">
+    <wsdl:operation name="getEmployee">
+      <wsdl:input name="getEmployeeRequest" message="tns:getEmployeeRequest">
+    </wsdl:input>
+      <wsdl:output name="getEmployeeResponse" message="tns:getEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmployeesByExperience">
+      <wsdl:input name="getEmployeesByExperienceRequest" message="tns:getEmployeesByExperienceRequest">
+    </wsdl:input>
+      <wsdl:output name="getEmployeesByExperienceResponse" message="tns:getEmployeesByExperienceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CompanyBinding" type="tns:EmployeeService">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getEmployee">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getEmployeeRequest">
+        <soap:body use="literal" namespace="http://all.Services/"/>
+      </wsdl:input>
+      <wsdl:output name="getEmployeeResponse">
+        <soap:body use="literal" namespace="http://all.Services/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmployeesByExperience">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getEmployeesByExperienceRequest">
+        <soap:body use="literal" namespace="http://all.Services/"/>
+      </wsdl:input>
+      <wsdl:output name="getEmployeesByExperienceResponse">
+        <soap:body use="literal" namespace="http://all.Services/"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CompanyService">
+    <wsdl:port name="CompanyPort" binding="tns:CompanyBinding">
+      <soap:address location="http://localhost:1234/CompanyPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
