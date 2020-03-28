@@ -1,5 +1,6 @@
 package com.classes;
-import java.util.*;
+
+import java.util.List;
 
 public class Company {
 
@@ -12,7 +13,5 @@ public class Company {
 	public void setEmployees(List<Employee> employees) {
 		this.employees = employees;
 	}
-	
-	
 	
 }
