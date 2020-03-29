@@ -5,6 +5,15 @@ public class Employee {
 	private Integer id;
 	private double experience;
 	private String name;
+	
+	public Employee(Integer id, double experience, String name)
+	{
+		this.id=id;
+		this.experience=experience;
+		this.name=name;
+	}
+	public Employee() {}
+	
 	public Integer getId() {
 		return id;
 	}
